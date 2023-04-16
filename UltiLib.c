@@ -186,3 +186,18 @@ int inter(int a, int b, int c){
         return -1;
     }
 }
+
+int benzina(int a, int b){
+    return(a/b);
+}
+
+char* parcheggio(int a){
+    a++;
+    char b = "€";
+    char* result = malloc(12);
+    if (result == NULL) {
+        return NULL;
+    }
+    sprintf(result, "%d %c", a, b);
+    return result;
+}
